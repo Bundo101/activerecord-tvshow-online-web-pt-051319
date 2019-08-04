@@ -4,11 +4,8 @@ class CreateShows < ActiveRecord::Migration[4.2]
     create_table :shows do |t|
       t.string :name
       t.string :network
-      t.integer :price
-      t.string :size
-      t.string :image_url
-      t.timestamp :created_at
-      t.timestamp :updated_at
+      t.datetime :day
+      t.integer :rating
     end
   end
   
