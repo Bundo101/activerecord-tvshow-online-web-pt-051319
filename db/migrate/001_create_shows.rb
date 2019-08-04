@@ -1,8 +1,9 @@
-class CreateCostumes < ActiveRecord::Migration[4.2]
+class CreateShows < ActiveRecord::Migration[4.2]
   
   def change
-    create_table :costumes do |t|
+    create_table :shows do |t|
       t.string :name
+      t.string :network
       t.integer :price
       t.string :size
       t.string :image_url
